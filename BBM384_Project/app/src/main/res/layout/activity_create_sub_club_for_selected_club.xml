@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateSubClubForSelectedClubActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CreateClubActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".CreateClubActivity"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="-74dp">
+
+            <EditText
+                android:id="@+id/requestedQuestionInput3"
+                android:layout_width="252dp"
+                android:layout_height="59dp"
+                android:ems="10"
+                android:gravity="clip_horizontal"
+                android:inputType="textMultiLine|textPersonName"
+                android:textAlignment="textStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.61"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionText7"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/questionInput2"
+                android:layout_width="254dp"
+                android:layout_height="57dp"
+                android:ems="10"
+                android:gravity="clip_horizontal"
+                android:inputType="textMultiLine|textPersonName"
+                android:textAlignment="textStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.617"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionText5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/questionText4"
+                android:layout_width="124dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="4dp"
+                android:text="Question 1:"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.337"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/memberRequestDescriptionInput" />
+
+            <EditText
+                android:id="@+id/subClubNameInput"
+                android:layout_width="216dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subClubTextView" />
+
+            <EditText
+                android:id="@+id/memberRequestDescriptionInput"
+                android:layout_width="216dp"
+                android:layout_height="70dp"
+                android:ems="10"
+                android:gravity="clip_horizontal"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+
+            <TextView
+                android:id="@+id/clubNameText"
+                android:layout_width="124dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="60dp"
+                android:text="Club Name:"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.337"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="124dp"
+                android:layout_height="27dp"
+                android:text="Description:"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.337"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subClubNameInput" />
+
+            <Button
+                android:id="@+id/applyButton"
+                android:layout_width="115dp"
+                android:layout_height="52dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apply"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/requestedQuestionInput3" />
+
+            <TextView
+                android:id="@+id/questionText5"
+                android:layout_width="124dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="4dp"
+                android:text="Question 2:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.337"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionInput1" />
+
+            <TextView
+                android:id="@+id/questionText7"
+                android:layout_width="124dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="4dp"
+                android:text="Question 3:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.337"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionInput2" />
+
+            <EditText
+                android:id="@+id/questionInput1"
+                android:layout_width="253dp"
+                android:layout_height="55dp"
+                android:ems="10"
+                android:gravity="clip_horizontal"
+                android:inputType="textMultiLine|textPersonName"
+                android:textAlignment="textStart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.613"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionText4" />
+
+            <TextView
+                android:id="@+id/subClubTextView"
+                android:layout_width="127dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="56dp"
+                android:text="Sub-Club Name:"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.341"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/parentClubNameTextView" />
+
+            <TextView
+                android:id="@+id/parentClubNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.274"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clubNameText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

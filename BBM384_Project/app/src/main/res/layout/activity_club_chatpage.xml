@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chatpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClubChatpageActivity">
+
+    <Button
+        android:id="@+id/homeButton2"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:text="Home"
+        app:layout_constraintBottom_toTopOf="@+id/subClubsText"
+        app:layout_constraintEnd_toStartOf="@+id/reviewButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/reviewButton2"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Revıew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chatButton2"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="24dp"
+        android:text="Chat"
+        app:layout_constraintBottom_toTopOf="@+id/totalRatingTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/reviewButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reviewButton2"
+        app:layout_constraintVertical_bias="0.037">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/chatTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </ScrollView>
+
+        <Spinner
+            android:id="@+id/spinnerMassageTo"
+            android:layout_width="150dp"
+            android:layout_height="44dp" />
+
+        <EditText
+            android:id="@+id/sendMessageInput"
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:ems="10"
+            android:gravity="clip_horizontal"
+            android:inputType="textMultiLine|textPersonName"
+            android:textAlignment="textStart" />
+
+        <Button
+            android:id="@+id/sendMessageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

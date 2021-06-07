@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.social_interest_club">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Social_Interest_Club">
+        <activity android:name=".UnbanUserActivity"></activity>
+        <activity android:name=".BanUserActivity" />
+        <activity android:name=".SubClubHomepageActivity" />
+        <activity android:name=".ManageSubClubActivity" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".BrowseSubClubActivity" />
+        <activity android:name=".SubClubHomepageActivity" />
+        <activity android:name=".CreateSubClubForSelectedClubActivity" />
+        <activity android:name=".CreateSubClubActivity" />
+        <activity android:name=".MemberRequestClubActivity" />
+        <activity android:name=".CreateRequestedClubActivity" />
+        <activity android:name=".AdminClubRequestsActivity" />
+        <activity android:name=".QuestionarrieActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GuestHomePage" />
+        <activity android:name=".BrowseClubsActivity" />
+        <activity android:name=".ClubChatpageActivity" />
+        <activity android:name=".ClubReviewpageActivity" />
+        <activity android:name=".ClubHomepageActivity" />
+        <activity android:name=".UpdateSelectedClubActivity" />
+        <activity android:name=".DeleteClubsActivity" />
+        <activity android:name=".DeleteClubActivity" />
+        <activity android:name=".UpdateClubsActivity" />
+        <activity android:name=".SeeClubsActivity" />
+        <activity android:name=".AdminManageClubsActivity" />
+        <activity android:name=".CreateClubActivity" />
+        <activity android:name=".AdminProfileActivity" />
+        <activity android:name=".HomepageActivity" />
+        <activity android:name=".PasswordRecoveryActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/Theme.Social_Interest_Club.NoActionBar" />
+    </application>
+
+</manifest>

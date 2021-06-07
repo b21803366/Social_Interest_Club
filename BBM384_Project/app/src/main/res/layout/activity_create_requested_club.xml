@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateRequestedClubActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CreateClubActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".CreateClubActivity"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="-74dp">
+
+            <EditText
+                android:id="@+id/requestedQuestionInput3"
+                android:layout_width="252dp"
+                android:layout_height="59dp"
+                android:ems="10"
+                android:gravity="clip_horizontal"
+                android:inputType="textMultiLine|textPersonName"
+                android:textAlignment="textStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.61"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/requestedQuestionText7"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/requestedQuestionInput2"
+                android:layout_width="254dp"
+                android:layout_height="57dp"
+                android:ems="10"
+                android:gravity="clip_horizontal"
+                android:inputType="textMultiLine|textPersonName"
+                android:textAlignment="textStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.617"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/requestedQuestionText5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/requestedQuestionText4"
+                android:layout_width="124dp"
+                android:layout_height="27dp"
+                android:text="Question 1:"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.337"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/requestedDescriptionInput" />
+
+            <EditText
+                android:id="@+id/requestedDescriptionInput"
+                android:layout_width="216dp"
+                android:layout_height="66dp"
+                android:ems="10"
+                android:gravity="clip_horizontal"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/requestedQuestionText4"
+                app:layout_constraintTop_toBottomOf="@id/requestedDescriptionText"
+                tools:layout_editor_absoluteY="203dp" />
+
+            <TextView
+                android:id="@+id/requestedClubNameText"
+                android:layout_width="124dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="104dp"
+                android:text="Club Name:"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.337"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/requestedDescriptionText"
+                android:layout_width="125dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="4dp"
+                android:text="Description:"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/requestedDescriptionInput"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.339"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/requestedClubNameTextView" />
+
+            <Button
+                android:id="@+id/requestedApplyButton"
+                android:layout_width="115dp"
+                android:layout_height="52dp"
+                android:layout_marginBottom="4dp"
+                android:text="Apply"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/requestedQuestionInput3" />
+
+            <TextView
+                android:id="@+id/requestedQuestionText5"
+                android:layout_width="124dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="4dp"
+                android:text="Question 2:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.337"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/requestedQuestionInput1" />
+
+            <TextView
+                android:id="@+id/requestedQuestionText7"
+                android:layout_width="124dp"
+                android:layout_height="27dp"
+                android:text="Question 3:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.337"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/requestedQuestionInput2" />
+
+            <EditText
+                android:id="@+id/requestedQuestionInput1"
+                android:layout_width="253dp"
+                android:layout_height="55dp"
+                android:ems="10"
+                android:gravity="clip_horizontal"
+                android:inputType="textMultiLine|textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.62"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/requestedQuestionText4" />
+
+            <TextView
+                android:id="@+id/requestedClubNameTextView"
+                android:layout_width="214dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                app:layout_constraintBottom_toTopOf="@+id/requestedDescriptionText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/requestedClubNameText"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

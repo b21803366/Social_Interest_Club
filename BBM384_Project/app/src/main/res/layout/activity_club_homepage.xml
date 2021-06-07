@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClubHomepageActivity">
+
+    <TextView
+        android:id="@+id/subClubsText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Sub Clubs"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/subClubListTable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clubDescriptionTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/chatButton"
+        android:layout_width="136dp"
+        android:layout_height="60dp"
+        android:text="Chat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toEndOf="@+id/reviewButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/joinClubButton"
+        android:layout_width="127dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="3dp"
+        android:text="Joın Club"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joinClubAlreadyJoinedTextView"
+        app:layout_constraintVertical_bias="0.821" />
+
+    <TableLayout
+        android:id="@+id/subClubListTable"
+        android:layout_width="351dp"
+        android:layout_height="347dp"
+        android:layout_marginBottom="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="51dp" />
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/totalRatingTextView"
+        android:layout_width="132dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="20dp"
+        android:text="rating"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/subClubListTable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reviewButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="136dp"
+        android:layout_height="60dp"
+        android:text="Home"
+        app:layout_constraintBottom_toTopOf="@+id/totalRatingTextView"
+        app:layout_constraintEnd_toStartOf="@+id/reviewButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/reviewButton"
+        android:layout_width="136dp"
+        android:layout_height="60dp"
+        android:text="Revıew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/clubNameTextView"
+        android:layout_width="192dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:text="clubname"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reviewButton" />
+
+    <TextView
+        android:id="@+id/clubDescriptionTextView"
+        android:layout_width="354dp"
+        android:layout_height="57dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/subClubListTable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clubNameTextView"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/joinClubAlreadyJoinedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="You have already joined this club."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subClubListTable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
